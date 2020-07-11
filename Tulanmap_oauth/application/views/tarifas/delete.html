@@ -1,0 +1,35 @@
+$def with(tarifas, message)
+<h3>
+    <a href="/tarifas">tarifas</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_tarifa" id="id_tarifa" value="$tarifas.id_tarifa" />
+
+    <div class="form-group">
+    <label for="descripcion_tarifa">descripcion_tarifa</label>
+    <input readonly id="descripcion_tarifa" type="text" class="form-control" name="descripcion_tarifa" size="30" value="$tarifas.descripcion_tarifa"/>
+</div><div class="form-group">
+    <label for="tarifa">tarifa</label>
+    <input readonly id="tarifa" type="text" class="form-control" name="tarifa" size="30" value="$tarifas.tarifa"/>
+</div><div class="form-group">
+    <label for="activo">activo</label>
+    <input readonly id="activo" type="text" class="form-control" name="activo" size="30" value="$tarifas.activo"/>
+</div><div class="form-group">
+    <label for="id_ruta">id_ruta</label>
+    <input readonly id="id_ruta" type="text" class="form-control" name="id_ruta" size="30" value="$tarifas.id_ruta"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>
