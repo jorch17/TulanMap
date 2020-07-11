@@ -11,7 +11,7 @@ $def with(tarifas)
     <tbody>
         $for item in tarifas:
         <tr>
-            <td><a href='/tarifas/view/$item.id_tarifa'>$item.id_tarifa</a></td>
+            <td><img src="/static/files/dolar.png" width="40" height="30"><a href='/tarifas/view/$item.id_tarifa'>$item.descripcion_tarifa</a></td>
             <td><a href='/tarifas/edit/$item.id_tarifa'><span class="glyphicon glyphicon-pencil"></span></a></td>
             <td><a href='/tarifas/delete/$item.id_tarifa'><span class="glyphicon glyphicon-trash"></span></a></td>
         </tr>
