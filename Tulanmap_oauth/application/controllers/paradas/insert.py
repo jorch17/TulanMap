@@ -45,6 +45,6 @@ class Insert:
 
         # call model insert_paradas and try to insert new data
         config.model.insert_paradas(
-            form['nombre_parada'],form['latitud_parada'],form['longitud_parada'],form['identificador_p'],form['activo'],form['id_ruta'],
+            form['nombre_parada'],form['activo'],form['id_ruta'],
         )
         raise config.web.seeother('/paradas') # render paradas index.html

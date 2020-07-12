@@ -34,22 +34,14 @@ create table rutas(
     hora_inicio varchar(8) not null,
     hora_fin varchar(8) not null,
     intervalo varchar(10) not null,
-    latitud_inicio double not null,
-    longitud_inicio double not null,
-	latitud_final double not null,
-    longitud_final double not null,
     tiempo_recorrido varchar(10) not null,
     distancia_km varchar(8) not null,
-    activo varchar(2) not null);
-    
+    activo integer NOT NULL DEFAULT 1);
     
 create table paradas(
     id_parada int(3) primary key auto_increment not null,
     nombre_parada varchar(40) not null,
-    latitud_parada double not null,
-    longitud_parada double not null,
-    identificador_p varchar(15) not null,
-    activo varchar(2) not null,
+    activo integer NOT NULL DEFAULT 1,
     id_ruta int(3) not null,
     FOREIGN KEY (id_ruta) REFERENCES rutas(id_ruta));
     
@@ -57,9 +49,10 @@ create table paradas(
     id_tarifa int(3) primary key auto_increment not null,
     descripcion_tarifa varchar(40) not null,
     tarifa varchar(10) not null,
-    activo varchar(2) not null,
+    activo integer NOT NULL DEFAULT 1,
     id_ruta int (3) not null,
     FOREIGN KEY (id_ruta) REFERENCES rutas(id_ruta));
+
 
 INSERT INTO users (user, privilege, status, username, email, other_data, user_hash)
 VALUES 

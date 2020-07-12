@@ -31,16 +31,12 @@ def delete_rutas(id_ruta):
         return None
 
 
-def insert_rutas(nombre_ruta,hora_inicio,hora_fin,intervalo,latitud_inicio,longitud_inicio,latitud_final,longitud_final,tiempo_recorrido,distancia_km,activo):
+def insert_rutas(nombre_ruta,hora_inicio,hora_fin,intervalo,tiempo_recorrido,distancia_km,activo):
     try:
         return db.insert('rutas',nombre_ruta=nombre_ruta,
 hora_inicio=hora_inicio,
 hora_fin=hora_fin,
 intervalo=intervalo,
-latitud_inicio=latitud_inicio,
-longitud_inicio=longitud_inicio,
-latitud_final=latitud_final,
-longitud_final=longitud_final,
 tiempo_recorrido=tiempo_recorrido,
 distancia_km=distancia_km,
 activo=activo)
@@ -50,17 +46,13 @@ activo=activo)
         return None
 
 
-def edit_rutas(id_ruta,nombre_ruta,hora_inicio,hora_fin,intervalo,latitud_inicio,longitud_inicio,latitud_final,longitud_final,tiempo_recorrido,distancia_km,activo):
+def edit_rutas(id_ruta,nombre_ruta,hora_inicio,hora_fin,intervalo,tiempo_recorrido,distancia_km,activo):
     try:
         return db.update('rutas',id_ruta=id_ruta,
 nombre_ruta=nombre_ruta,
 hora_inicio=hora_inicio,
 hora_fin=hora_fin,
 intervalo=intervalo,
-latitud_inicio=latitud_inicio,
-longitud_inicio=longitud_inicio,
-latitud_final=latitud_final,
-longitud_final=longitud_final,
 tiempo_recorrido=tiempo_recorrido,
 distancia_km=distancia_km,
 activo=activo,

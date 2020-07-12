@@ -45,6 +45,6 @@ class Insert:
 
         # call model insert_rutas and try to insert new data
         config.model.insert_rutas(
-            form['nombre_ruta'],form['hora_inicio'],form['hora_fin'],form['intervalo'],form['latitud_inicio'],form['longitud_inicio'],form['latitud_final'],form['longitud_final'],form['tiempo_recorrido'],form['distancia_km'],form['activo'],
+            form['nombre_ruta'],form['hora_inicio'],form['hora_fin'],form['intervalo'],form['tiempo_recorrido'],form['distancia_km'],form['activo'],
         )
         raise config.web.seeother('/rutas') # render rutas index.html

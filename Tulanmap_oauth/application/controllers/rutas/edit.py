@@ -50,7 +50,7 @@ class Edit:
         form['id_ruta'] = config.check_secure_val(str(form['id_ruta'])) # HMAC id_ruta validate
         # edit user with new data
         result = config.model.edit_rutas(
-            form['id_ruta'],form['nombre_ruta'],form['hora_inicio'],form['hora_fin'],form['intervalo'],form['latitud_inicio'],form['longitud_inicio'],form['latitud_final'],form['longitud_final'],form['tiempo_recorrido'],form['distancia_km'],form['activo'],
+            form['id_ruta'],form['nombre_ruta'],form['hora_inicio'],form['hora_fin'],form['intervalo'],form['tiempo_recorrido'],form['distancia_km'],form['activo'],
         )
         if result == None: # Error on udpate data
             id_ruta = config.check_secure_val(str(id_ruta)) # validate HMAC id_ruta

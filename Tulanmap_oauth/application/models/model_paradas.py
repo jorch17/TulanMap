@@ -31,12 +31,9 @@ def delete_paradas(id_parada):
         return None
 
 
-def insert_paradas(nombre_parada,latitud_parada,longitud_parada,identificador_p,activo,id_ruta):
+def insert_paradas(nombre_parada,activo,id_ruta):
     try:
         return db.insert('paradas',nombre_parada=nombre_parada,
-latitud_parada=latitud_parada,
-longitud_parada=longitud_parada,
-identificador_p=identificador_p,
 activo=activo,
 id_ruta=id_ruta)
     except Exception as e:
@@ -45,13 +42,10 @@ id_ruta=id_ruta)
         return None
 
 
-def edit_paradas(id_parada,nombre_parada,latitud_parada,longitud_parada,identificador_p,activo,id_ruta):
+def edit_paradas(id_parada,nombre_parada,activo,id_ruta):
     try:
         return db.update('paradas',id_parada=id_parada,
 nombre_parada=nombre_parada,
-latitud_parada=latitud_parada,
-longitud_parada=longitud_parada,
-identificador_p=identificador_p,
 activo=activo,
 id_ruta=id_ruta,
                   where='id_parada=$id_parada',
