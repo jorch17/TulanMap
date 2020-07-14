@@ -11,7 +11,7 @@ $def with(paradas)
     <tbody>
         $for item in paradas:
         <tr>
-            <td><img src="/static/files/parada.png" width="40" height="30"><a href='/paradas/view/$item.id_parada'>nombre_parada</a></td>
+            <td><img src="/static/files/parada.png" width="40" height="30"><a href='/paradas/view/$item.id_parada'>$item.nombre_parada</a></td>
             <td><a href='/paradas/edit/$item.id_parada'><span class="glyphicon glyphicon-pencil"></span></a></td>
             <td><a href='/paradas/delete/$item.id_parada'><span class="glyphicon glyphicon-trash"></span></a></td>
         </tr>
