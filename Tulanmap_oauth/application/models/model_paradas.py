@@ -33,9 +33,7 @@ def delete_paradas(id_parada):
 
 def insert_paradas(nombre_parada,activo,id_ruta):
     try:
-        return db.insert('paradas',nombre_parada=nombre_parada,
-activo=activo,
-id_ruta=id_ruta)
+        return db.insert('paradas',nombre_parada=nombre_parada,activo=activo,id_ruta=id_ruta)
     except Exception as e:
         print "Model insert Error {}".format(e.args)
         print "Model insert Message {}".format(e.message)
@@ -44,10 +42,7 @@ id_ruta=id_ruta)
 
 def edit_paradas(id_parada,nombre_parada,activo,id_ruta):
     try:
-        return db.update('paradas',id_parada=id_parada,
-nombre_parada=nombre_parada,
-activo=activo,
-id_ruta=id_ruta,
+        return db.update('paradas',id_parada=id_parada,nombre_parada=nombre_parada,activo=activo,id_ruta=id_ruta,
                   where='id_parada=$id_parada',
                   vars=locals())
     except Exception as e:
