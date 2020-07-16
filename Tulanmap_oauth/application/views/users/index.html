@@ -1,17 +1,17 @@
 $def with(users)
 <h3>
-    <a href="/users">Users</a>
+    <a href="/users">Usuarios</a>
 </h3>
-<a href="/users/printer"><span class="glyphicon glyphicon-print"></span>Print version</a>
+<a href="/users/printer"><span class="glyphicon glyphicon-print"></span>Imprimir version</a>
 
 <table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
     <thead>
-        <th>User Name</th>
-        <th>User</th>
-        <th>Status</th>
-        <th>Privilege</th>
-        <th>Updated</th>
-        <th>Options</th>
+        <th>Nombre de Usuario</th>
+        <th>Usuario</th>
+        <th>Estatus</th>
+        <th>Privilegio</th>
+        <th>Actualizar</th>
+        <th>Opciones</th>
     </thead>
     <tbody>
         $for item in users:
@@ -30,8 +30,8 @@ $def with(users)
 
             <td>$item.created</td>
             <td>
-                <a href='/users/edit/$item.user'><span class="glyphicon glyphicon-pencil"></span> Edit</a>
-                <a href='/users/delete/$item.user'><span class="glyphicon glyphicon-trash"></span> Delete</a>
+                <a href='/users/edit/$item.user'><span class="glyphicon glyphicon-pencil"></span> Editar</a>
+                <a href='/users/delete/$item.user'><span class="glyphicon glyphicon-trash"></span> Borrar</a>
             </td>
         </tr>
     </tbody>
