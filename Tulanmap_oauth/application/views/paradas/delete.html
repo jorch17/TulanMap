@@ -1,6 +1,6 @@
 $def with(paradas, message)
 <h3>
-    <a href="/paradas">paradas</a>
+    <a href="/paradas">Paradas</a>
 </h3>
 $if message != None:
     <div class="alert alert-warning">
@@ -12,19 +12,19 @@ $if message != None:
     <input type="hidden" name="id_parada" id="id_parada" value="$paradas.id_parada" />
 
     <div class="form-group">
-    <label for="nombre_parada">nombre_parada</label>
+    <label for="nombre_parada">Nombre_Parada</label>
     <input readonly id="nombre_parada" type="text" class="form-control" name="nombre_parada" size="30" value="$paradas.nombre_parada"/>
 </div><div class="form-group">
-    <label for="activo">activo</label>
+    <label for="activo">Activo</label>
     <input readonly id="activo" type="text" class="form-control" name="activo" size="30" value="$paradas.activo"/>
 </div><div class="form-group">
-    <label for="id_ruta">id_ruta</label>
+    <label for="id_ruta">ID_Ruta</label>
     <input readonly id="id_ruta" type="text" class="form-control" name="id_ruta" size="30" value="$paradas.id_ruta"/>
 </div>
 
     <div class="form-group">
         <label></label>
-        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Borrar</button>
     </div>
 </form>
 <br>

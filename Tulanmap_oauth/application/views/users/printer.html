@@ -5,11 +5,11 @@ $def with(users)
 <table id="datos_imprimir" class="table table-hover" cellspacing="0" width="100%">
     <thead>
         <th>No.</th>
-        <th>User name</th>
-        <th>User</th>
-        <th>Status</th>
-        <th>Privilege</th>
-        <th>Updated</th>
+        <th>Nombre de usuario</th>
+        <th>Usuario</th>
+        <th>Estatus</th>
+        <th>Privilegio</th>
+        <th>Actualizar</th>
     </thead>
     <tbody>
             $ i = 1
@@ -22,9 +22,9 @@ $def with(users)
             <td><a href='/users/view/$item.user'>$item.username</a></td>
             <td><a href='/users/view/$item.user'>$item.user.split('!')[0]</a></td>
             $if item.status == 0:
-                <td>Disabled</td>
+                <td>Desactivado</td>
             $else:
-                <td>Enabled</td>
+                <td>Activado</td>
 
             $if item.privilege == 0:
                 <td>Admin</td>

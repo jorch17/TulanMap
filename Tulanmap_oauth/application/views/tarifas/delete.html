@@ -1,6 +1,6 @@
 $def with(tarifas, message)
 <h3>
-    <a href="/tarifas">tarifas</a>
+    <a href="/tarifas">Tarifas</a>
 </h3>
 $if message != None:
     <div class="alert alert-warning">
@@ -12,22 +12,22 @@ $if message != None:
     <input type="hidden" name="id_tarifa" id="id_tarifa" value="$tarifas.id_tarifa" />
 
     <div class="form-group">
-    <label for="descripcion_tarifa">descripcion_tarifa</label>
+    <label for="descripcion_tarifa">Descripcion_Tarifa</label>
     <input readonly id="descripcion_tarifa" type="text" class="form-control" name="descripcion_tarifa" size="30" value="$tarifas.descripcion_tarifa"/>
 </div><div class="form-group">
-    <label for="tarifa">tarifa</label>
+    <label for="tarifa">Tarifa</label>
     <input readonly id="tarifa" type="text" class="form-control" name="tarifa" size="30" value="$tarifas.tarifa"/>
 </div><div class="form-group">
-    <label for="activo">activo</label>
+    <label for="activo">Activo</label>
     <input readonly id="activo" type="text" class="form-control" name="activo" size="30" value="$tarifas.activo"/>
 </div><div class="form-group">
-    <label for="id_ruta">id_ruta</label>
+    <label for="id_ruta">ID_Ruta</label>
     <input readonly id="id_ruta" type="text" class="form-control" name="id_ruta" size="30" value="$tarifas.id_ruta"/>
 </div>
 
     <div class="form-group">
         <label></label>
-        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Borrar</button>
     </div>
 </form>
 <br>

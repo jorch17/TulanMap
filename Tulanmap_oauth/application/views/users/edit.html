@@ -1,6 +1,6 @@
 $def with(users, message)
 <h3>
-    <a href="/users">Users</a>
+    <a href="/users">Usuario</a>
 </h3>
 $if message != None:
     <div class="alert alert-warning">
@@ -11,17 +11,17 @@ $if message != None:
     <input type="hidden" name="user" id="user" value="$users.user" />
 
     <div class="form-group">
-        <label>User</label>
+        <label>Usuario</label>
         <input readonly id="un" type="text" class="form-control" name="un" size="30" value="$users.user.split('!')[0]"/>
     </div>
 
     <div class="form-group">
-        <label>User Name</label>
+        <label>Nombre de usuario</label>
         <input required id="username" type="text" class="form-control" name="username" size="30" value="$users.username"/>
     </div>
 
     <div class="form-group">
-        <label>Privilege</label>
+        <label>Privilegio</label>
         $if users.privilege == 0:
              <div class="radio">
                 <label><input type="radio" name="privilege" value=0 checked>Admin</label>
@@ -40,21 +40,21 @@ $if message != None:
     </div>
 
     <div class="form-group">
-        <label>Status</label>
+        <label>Estatus</label>
         $if users.status == 0:
              <div class="radio">
-                <label><input type="radio" name="status" value=0 checked>Disabled</label>
+                <label><input type="radio" name="status" value=0 checked>Desactivado</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="status" value=1>Enabled</label>
+                <label><input type="radio" name="status" value=1>Activado</label>
             </div>
 
         $else:
              <div class="radio">
-                <label><input type="radio" name="status" value=0>Disabled</label>
+                <label><input type="radio" name="status" value=0>Desactivado</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="status" value=1 checked>Enabled</label>
+                <label><input type="radio" name="status" value=1 checked>Activado</label>
             </div>
     </div>
 
@@ -64,7 +64,7 @@ $if message != None:
     </div>
 
     <div class="form-group">
-        <label>Other</label>
+        <label>Otro</label>
         <input required id="other_data" type="text" class="form-control" name="other_data" size="30" value="$users.other_data"/>
     </div>
 
