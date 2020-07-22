@@ -1,6 +1,6 @@
 $def with(rutas, message)
 <h3>
-    <a href="/rutas">rutas</a>
+    <a href="/rutas">Rutas</a>
 </h3>
 $if message != None:
     <div class="alert alert-warning">
@@ -12,31 +12,31 @@ $if message != None:
     <input type="hidden" name="id_ruta" id="id_ruta" value="$rutas.id_ruta" />
 
     <div class="form-group">
-    <label for="nombre_ruta">nombre_ruta</label>
+    <label for="nombre_ruta">Nombre Ruta</label>
     <input readonly id="nombre_ruta" type="text" class="form-control" name="nombre_ruta" size="30" value="$rutas.nombre_ruta"/>
 </div><div class="form-group">
-    <label for="hora_inicio">hora_inicio</label>
+    <label for="hora_inicio">Hora Inicio</label>
     <input readonly id="hora_inicio" type="text" class="form-control" name="hora_inicio" size="30" value="$rutas.hora_inicio"/>
 </div><div class="form-group">
-    <label for="hora_fin">hora_fin</label>
+    <label for="hora_fin">Hora Fin</label>
     <input readonly id="hora_fin" type="text" class="form-control" name="hora_fin" size="30" value="$rutas.hora_fin"/>
 </div><div class="form-group">
     <label for="intervalo">intervalo</label>
     <input readonly id="intervalo" type="text" class="form-control" name="intervalo" size="30" value="$rutas.intervalo"/>
 </div><div class="form-group">
-    <label for="tiempo_recorrido">tiempo_recorrido</label>
+    <label for="tiempo_recorrido">Tiempo Recorrido</label>
     <input readonly id="tiempo_recorrido" type="text" class="form-control" name="tiempo_recorrido" size="30" value="$rutas.tiempo_recorrido"/>
 </div><div class="form-group">
-    <label for="distancia_km">distancia_km</label>
+    <label for="distancia_km">Distancia(km)</label>
     <input readonly id="distancia_km" type="text" class="form-control" name="distancia_km" size="30" value="$rutas.distancia_km"/>
 </div><div class="form-group">
-    <label for="activo">activo</label>
+    <label for="activo">Activo</label>
     <input readonly id="activo" type="text" class="form-control" name="activo" size="30" value="$rutas.activo"/>
 </div>
 
     <div class="form-group">
         <label></label>
-        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Eliminar</button>
     </div>
 </form>
 <br>

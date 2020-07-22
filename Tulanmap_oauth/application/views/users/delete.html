@@ -1,28 +1,28 @@
 $def with(users, message)
 <h3>
-    <a href="/users">Users</a>
+    <a href="/users">Usuarios</a>
 </h3>
 $if message != None:
     <div class="alert alert-warning">
-        <strong>Warning </strong> $message
+        <strong>Advertencia </strong> $message
     </div>
 
 <form action="" method="post" enctype="multipart/form-data">
     <input type="hidden" name="user" id="user" value="$users.user" />
 
     <div class="form-group">
-        <label>User</label>
+        <label>Usuario</label>
         <input readonly id="us" type="text" class="form-control" name="us" size="30" value="$users.user.split('!')[0]"/>
     </div>
 
     <div class="form-group">
-        <label>Name</label>
+        <label>Nombre</label>
         <input readonly id="username" type="text" class="form-control" name="username" size="30" value="$users.username"/>
     </div>
 
 
     <div class="form-group">
-        <label>Privilege</label>
+        <label>Privilegio</label>
         <select readonly name="privilege" id="privilege" class="form-control" value="$users.privilege">
           <option value=0>Admin</option>
           <option value=1>Guess</option>
@@ -30,10 +30,10 @@ $if message != None:
     </div>
 
     <div class="form-group">
-        <label>Status</label>
+        <label>Estatus</label>
         <select readonly name="status" id="status" class="form-control" value="$users.status">
-          <option value=0>Disabled</option>
-          <option value=1>Enabled</option>
+          <option value=0>Desactivar</option>
+          <option value=1>Activar</option>
         </select>
     </div>
 
@@ -43,7 +43,7 @@ $if message != None:
     </div>
 
     <div class="form-group">
-        <label>Other</label>
+        <label>Otros</label>
         <input readonly id="other_data" type="text" class="form-control" name="other_data" size="30" value="$users.other_data"/>
     </div>
 
@@ -54,7 +54,7 @@ $if message != None:
 
     <div class="form-group">
         <label></label>
-        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span>  Delete</button>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span>  Eliminar</button>
     </div>
 
 </form>
