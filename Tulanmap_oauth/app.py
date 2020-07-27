@@ -32,7 +32,7 @@ elif remote is False: # Config local database and local oauth host
     host_config =  'http://localhost:8080/auth/%s/callback'
 
 # Activate ssl certificate
-ssl = False
+ssl = True
 
 # secret_key for hmac technique
 secret_key = "kuorra"
