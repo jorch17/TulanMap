@@ -43,7 +43,7 @@ $def with (page)
                         <li><a href="/loginselection"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 
                     $elif page.privilege == '0':
-                        <li class='active'><a  href="/"><img src="$page.picture"  style="max-width:100px; margin-top: -7px;" class="img-circle" height="27px" width="30px"> $page.user</a></li>
+                        <li class='active'><a  href="/"><img src="$page.picture"  style="max-width:100px; margin-top: -7px;" class="img-circle" height="27px" width="30px"> $page.username</a></li>
                         <li><a href="/paradas"><img src="/static/files/parada.png" width="40" height="30"></span>Paradas</a></li>
                         <li><a href="/rutas"><img src="/static/files/ruta.png" width="40" height="30"></span>Rutas</a></li>
                         <li><a href="/tarifas"><img src="/static/files/dolar.png" width="40" height="30"></span>Tarifas</a></li>
