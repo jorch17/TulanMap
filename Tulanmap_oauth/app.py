@@ -22,11 +22,11 @@ remote=True
     Base de datos remota (uso de db_cloud)
     Login de Google direccionado a una url en la nube ('http://REMOTE_SERVER/auth/%s/callback')
 '''
-remote = False
+remote = True
 
 if remote is True: # Config remote database and remote oauth host
     db = database.db_cloud
-    host_config = 'http://pruebakuorra.herokuapp.com/auth/%s/callback'
+    host_config = 'http://tulanmap.herokuapp.com/auth/%s/callback'
 elif remote is False: # Config local database and local oauth host
     db = database.db_localhost
     host_config =  'http://localhost:8080/auth/%s/callback'
@@ -48,8 +48,8 @@ urls = urls.urls
 
 # GOOGLE API OAUTH2
 # Google API Token 
-app_id = '705947670350-72mus3ou9pr1uuagbiuoje2si40lnad4.apps.googleusercontent.com'
-app_secret = 'm7WcWWJJU25PrjSHur6apxzL'
+app_id = '363739573092-52p12f1geeqk1or8vh9ikniodcjf97kt.apps.googleusercontent.com'
+app_secret = 'OEXXXfgsQi-T54_BlFCTsZ4A'
 
 
 # Global values

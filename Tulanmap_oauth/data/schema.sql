@@ -56,7 +56,7 @@ create table paradas(
 
 INSERT INTO users (user, privilege, status, username, email, other_data, user_hash)
 VALUES 
-('1716110488@utec-tgo.edu.mx', 0, 1, 'Jonatan', '1716110488@utec-tgo.edu.mx','administrador', MD5(concat('1716110488@utec-tgo.edu.mx ','kuorra_key', '2016/06/04')));
+('1716110232@utec-tgo.edu.mx', 0, 1, 'Jorge', '1716110232@utec-tgo.edu.mx','administrador', MD5(concat('1716110232@utec-tgo.edu.mx ','kuorra_key', '2016/06/04')));
 
 CREATE USER 'demo_google'@'localhost' IDENTIFIED BY '1234';
 GRANT ALL PRIVILEGES ON demo_google.* TO 'demo_google'@'localhost';
