@@ -32,16 +32,16 @@ elif remote is False: # Config local database and local oauth host
     host_config =  'http://localhost:8080/auth/%s/callback'
 
 # Activate ssl certificate
-ssl = True
+ssl = False
 
 # secret_key for hmac technique
 secret_key = "kuorra"
 
 # Time session, after logout
-expires = 5 # minutes
+expires = 60 # minutes
 
 # Refres HTML rate
-refresh = 60 # seconds
+refresh =180  # seconds
 
 # Get urls
 urls = urls.urls
