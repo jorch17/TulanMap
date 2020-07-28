@@ -48,8 +48,8 @@ urls = urls.urls
 
 # GOOGLE API OAUTH2
 # Google API Token 
-app_id = '363739573092-52p12f1geeqk1or8vh9ikniodcjf97kt.apps.googleusercontent.com'
-app_secret = 'OEXXXfgsQi-T54_BlFCTsZ4A'
+app_id = '245053574220-gjosqahcinrm7ruc4p7stlelm6pii30j.apps.googleusercontent.com'
+app_secret = '_9eGtgjCXbOGuPpisUZJF6iT'
 
 
 # Global values
