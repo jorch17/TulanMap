@@ -86,10 +86,10 @@ class Count:
         return str(session.count)
 
 
-def InternalError(): 
+#def InternalError(): 
     raise web.seeother('/500')
 
-def NotFound():
+#def NotFound():
     raise web.seeother('/404')
 
 if __name__ == "__main__":
