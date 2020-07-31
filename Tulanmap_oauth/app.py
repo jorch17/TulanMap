@@ -87,10 +87,10 @@ class Count:
 
 
 #def InternalError(): 
-    raise web.seeother('/500')
+    #raise web.seeother('/500')
 
 #def NotFound():
-    raise web.seeother('/404')
+    #raise web.seeother('/404')
 
 if __name__ == "__main__":
     db.printing = False # hide db transactions
