@@ -96,6 +96,6 @@ if __name__ == "__main__":
     db.printing = False # hide db transactions
     web.config.debug = False # hide debug print
     web.config.db_printing = False # hide db transactions
-    app.internalerror = InternalError # Web page for internal error
-    app.notfound = NotFound # web page for page not found
+    #app.internalerror = InternalError # Web page for internal error
+    #app.notfound = NotFound # web page for page not found
     app.run()
